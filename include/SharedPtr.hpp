@@ -25,7 +25,6 @@ class SharedPtr {
   void reset(T* ptr);
   void swap(SharedPtr& r);
   auto use_count() const -> size_t;
-
  private:
   T* pointer = nullptr;
   std::atomic_uint* counter = nullptr;
